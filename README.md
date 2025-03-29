@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Skill Up
 
-## Getting Started
+Skill Up é uma plataforma desenvolvida com Next.js para a criação e gerenciamento de projetos e portfólios, permitindo que profissionais e estudantes exibam seus trabalhos de forma organizada e atrativa.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js** - Framework para React
+- **Tailwind CSS** - Estilização moderna e responsiva
+- **Material UI** - Biblioteca de componentes
+- **PostgreSQL** - Banco de dados relacional
+- **NextAuth** - Autenticação segura
+- **Vercel** - Deploy rápido e eficiente
+
+## 📌 Funcionalidades
+
+- Cadastro e gerenciamento de projetos
+- Criação de portfólios 
+- Upload de imagens e arquivos
+- Compartilhamento de projetos via link público
+- Autenticação e gerenciamento de usuários
+
+## 📂 Estrutura do Projeto
+
+```sh
+skill-up/
+│-- public/       # Arquivos estáticos
+│-- src/
+│   ├── components/   # Componentes reutilizáveis
+│   ├── app/        # Páginas do Next.js
+│   ├── styles/       # Estilos globais
+│   ├── hooks/          # Hooks personalizados para reutilização de lógica
+│-- .env           # Configurações de ambiente
+│-- package.json   # Dependências do projeto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Como Executar o Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1️⃣ Clonar o Repositório
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+git clone https://github.com/RapportFlow/SkillUp_frontend.git
+cd skill-up
+```
 
-## Learn More
+### 2️⃣ Instalar Dependências
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3️⃣ Configurar Variáveis de Ambiente
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Crie um arquivo `.env` na raiz do projeto e configure as variáveis necessárias, como conexão com banco de dados e autenticação.
 
-## Deploy on Vercel
+### 4️⃣ Rodar o Projeto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+ npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Acesse o projeto no navegador: **[http://localhost:3000](http://localhost:3000)**
