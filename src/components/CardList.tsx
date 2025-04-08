@@ -35,7 +35,7 @@ export default function CardList() {
       project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.description.toLowerCase().includes(searchQuery.toLowerCase())
 
-    const matchesCategory = activeFilter === "All" || project.category === activeFilter
+    const matchesCategory = activeFilter === "All" || project.category.includes(activeFilter)
 
     return matchesSearch && matchesCategory
   })
@@ -51,7 +51,7 @@ export default function CardList() {
   const categories = ["All", "Analista de Dados", "Desenvolvedor FullStack", "QA", "Designer Gráfico", "UX"]
 
   return (
-    <div>
+    <div className="mb-10">
       <div className="relative mb-6">
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
         <Input
