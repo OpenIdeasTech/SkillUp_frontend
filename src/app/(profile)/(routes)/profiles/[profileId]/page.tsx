@@ -1,7 +1,6 @@
 "use client";
 
-import { MapPin, Pencil, PlusCircle } from 'lucide-react';
-import Image from 'next/image';
+import { Pencil } from 'lucide-react';
 import { Button } from '../../../../../components/ui/button';
 import CardGridPerson from './_components/CardGridPerson';
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -62,10 +61,6 @@ export default function Profile() {
                 <div className="flex flex-col">
                     <div className="flex justify-between mb-2">
                         <h1 className="font-bold text-6xl">Nome</h1>
-                        <Button className='bg-[#2D1C7F] text-white px-4 py-2 rounded-lg flex items-center gap-2'>
-                            <Pencil className="w-4 h-4" />
-                            Editar Perfil
-                        </Button>
                     </div>
                     <h3 className="mb-4 text-3xl">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
@@ -92,8 +87,8 @@ export default function Profile() {
                 <div className="flex flex-col w-full">
                     <div className="w-full flex justify-between items-center mb-4">
                         <h1 className="font-bold text-4xl">Projetos</h1>
-                        <Button className='bg-[#2D1C7F] text-white px-4 py-2 rounded-lg flex items-center gap-2'>
-                            <PlusCircle className="w-4 h-4" />
+                        <Button className='bg-[#2D1C7F] text-white text-xl px-4 py-2 rounded-lg flex items-center gap-2'>
+                            <Pencil className="w-6 h-6" />
                             Novo Projeto
                         </Button>
                     </div>
