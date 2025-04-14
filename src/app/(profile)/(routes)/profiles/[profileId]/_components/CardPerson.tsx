@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { ReplyAll } from "lucide-react";
-import Image from "next/image";
 
 interface Person {
   id: number;
@@ -17,12 +16,12 @@ interface CardPersonProps {
 
 export function CardPerson({ person }: CardPersonProps) {
   return (
-    <div className="flex items-center p-4 border rounded-lg shadow hover:shadow-lg transition gap-4">
-      <div className="w-16 h-16 rounded-full overflow-hidden relative">
-        <Image
+    <div className="flex items-center p-4 border rounded-lg shadow hover:shadow-lg transition gap-4 justify-between">
+      <div className="flex gap-4">
+      <div className="w-[100px] h-[100px] rounded-full overflow-hidden relative">
+        <img
           src={person.image}
           alt={person.name}
-          fill
           style={{ objectFit: "cover" }}
         />
       </div>
@@ -33,6 +32,7 @@ export function CardPerson({ person }: CardPersonProps) {
         <p className="text-lg text-gray-600">{person.description}</p>
       </div>
 
+      </div>
       <div className="text-right flex gap-4">
         <ReplyAll />
         <span className="font-bold text-lg">{person.projectName}</span>

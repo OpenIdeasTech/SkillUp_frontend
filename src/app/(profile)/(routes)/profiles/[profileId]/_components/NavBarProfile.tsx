@@ -1,22 +1,26 @@
 import React from 'react'
-import logo from '../../../../../../assets/logo-skill-up.png'
-import Image from 'next/image'
-import { Bell, Images, Moon } from 'lucide-react'
-import { Avatar, AvatarImage} from '@/components/ui/avatar'
+import { Bell, Moon, Settings } from 'lucide-react'
 
 const  NavBarProfile = () =>{
   return (
-    <div className='flex w-full py-4 px-[100px] justify-between items-center'>
-        <Image src={logo} alt="logo" />
-        <div className='flex gap-4 '>
-            <Images color='#fff' />
-            <Moon color='#fff' />
-            <Bell color='#fff' />
-            <Avatar>
-                <AvatarImage src="https://thispersondoesnotexist.com" />
-            </Avatar>
-        </div>
+    <header className="w-full py-4 px-6">
+    <div className="container mx-auto flex justify-between items-center">
+      <div className="text-2xl font-bold italic">logo</div>
+      <div className="flex items-center gap-4">
+        <span className="text-black font-semibold text-xl">@usuario</span>
+        <button className="border-none">
+          <Moon className="h-8 w-8" />
+        </button>
+        <button className="p-1 rounded-full relative">
+          <Bell className="h-8 w-8" />
+          <span className="absolute top-0 right-0 h-2 w-2 bg-purple-600 rounded-full"></span>
+        </button>
+        <button className="p-1 rounded-full">
+          <Settings className="h-8 w-8" />
+        </button>
+      </div>
     </div>
+  </header>
   )
 }
 
