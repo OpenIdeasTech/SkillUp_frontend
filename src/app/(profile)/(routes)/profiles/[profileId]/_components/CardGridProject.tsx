@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { CardProject } from "./cardproject";
-import { Pagination } from "./pagination";
+import { CardProject } from "./CardProject";
+import { Pagination } from "./Pagination";
 
 interface CardData {
     id: number;
