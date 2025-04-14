@@ -4,7 +4,6 @@ import HomeFooter from "@/components/HomeFooter";
 import MainHome from "@/components/MainHome";
 import NavBar from "@/components/NavBar";
 import Resources from "@/components/Resources";
-import Subscribe from "@/components/Subscribe";
 
 export default function Home() {
   return (
