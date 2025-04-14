@@ -8,7 +8,7 @@ const LandingPageLayout = ({
 }) => {
     return (
         <div className="h-full px=[100px]">
-            <div className="flex bg-[#2D1C7F]">
+            <div className="flex bg-[#FCFBFE]">
               <NavBarProfile />  
             </div>
             <main className="flex-1">

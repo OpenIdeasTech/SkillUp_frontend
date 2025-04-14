@@ -71,7 +71,7 @@ export default function CardList({isProfile}: {isProfile?: boolean}) {
             key={category}
             variant={activeFilter === category ? "default" : "outline"}
             className={`rounded-full text-lg px-4 py-1 h-auto ${
-              activeFilter === category ? "bg-[#6B71FF] text-white" : "bg-transparent text-black" }`}
+              activeFilter === category ? "bg-[#2D1C7F] text-white" : "bg-transparent text-black" }`}
             onClick={() => {
               setActiveFilter(category)
               setCurrentPage(1) 
