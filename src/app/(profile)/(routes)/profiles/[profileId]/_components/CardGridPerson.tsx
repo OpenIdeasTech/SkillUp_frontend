@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Pagination } from "./pagination";
+import { Pagination } from "./Pagination";
 import { CardPerson } from "./CardPerson";
 
 interface Person {
   id: number;
   name: string;
+  position: string;
   projectName: string;
   description: string;
   image: string;

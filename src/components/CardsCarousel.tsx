@@ -7,13 +7,13 @@ import { PenLine, BarChart3, Users, PanelsTopLeft, Workflow } from "lucide-react
 const CardsCarousel = () => {
   const resources = [
     {
-      title: "Projetos profissionais",
+      title: "Ideias compartilhadas",
       description: "Escolha entre os projetos disponíveis para começar a fazer seu portfólio.",
       icon: <PenLine className="h-6 w-6 text-white" />,
     },
     {
-      title: "Analytics integrado",
-      description: "Acompanhe visitantes, interações e conversas diretamente do seu perfil.",
+      title: "Crescimento pessoal",
+      description: "Acompanhe sua evolução, contribuições e reconhecimento dentro da organização",
       icon: <BarChart3 className="h-6 w-6 text-white" />,
     },
     {
@@ -34,29 +34,31 @@ const CardsCarousel = () => {
   ]
 
   return (
-    <div className="w-full py-16">
-      <div>
-        <Carousel className="w-full">
-          <CarouselContent>
-            {resources.map((resource, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <Card className="bg-[#231458] border-none h-full">
-                  <CardContent className="py-6">
-                    <div className="flex flex-col gap-4">
-                      <div className="bg-[#3b2180] w-12 h-12 rounded-md flex items-center justify-center">
-                        {resource.icon}
-                      </div>
-                      <h3 className="text-xl font-semibold text-white">{resource.title}</h3>
-                      <p className="text-white/80">{resource.description}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
-      </div>
-    </div>
+    <div className="w-full py-16 overflow-hidden">
+    <Carousel className="w-full">
+      <CarouselContent>
+        {resources.map((resource, index) => (
+          <CarouselItem
+            key={index}
+            className="basis-full sm:basis-1/2 lg:basis-1/3"
+          >
+            <Card className="bg-[#231458] border-none w-[300px] h-[300px] lg:h-full sm:w-[320px] md:3-[320px] lg:w-full">
+              <CardContent className="py-2 md:py-4 lg:py-6">
+                <div className="flex flex-col gap-4">
+                  <div className="bg-[#3b2180] w-12 h-12 rounded-md flex items-center justify-center">
+                    {resource.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-white">{resource.title}</h3>
+                  <p className="text-white/80">{resource.description}</p>
+                </div>
+              </CardContent>
+            </Card>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
+  </div>
+  
   )
 }
 

@@ -24,7 +24,7 @@ const PROJECTS = Array(12)
 
 const ITEMS_PER_PAGE = 6
 
-export default function CardList() {
+export default function CardList({isProfile}: {isProfile?: boolean}) {
   const [searchQuery, setSearchQuery] = useState("")
   const [activeFilter, setActiveFilter] = useState("All")
   const [currentPage, setCurrentPage] = useState(1)
@@ -52,7 +52,7 @@ export default function CardList() {
 
   return (
     <div className="mb-10">
-      <div className="relative mb-6">
+      <div className={`${isProfile ? "hidden" : "relative"} mb-6`}>
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
         <Input
           className="pl-10 bg-gray-100 border-none"
@@ -70,9 +70,8 @@ export default function CardList() {
           <Button
             key={category}
             variant={activeFilter === category ? "default" : "outline"}
-            className={`rounded-full text-sm px-4 py-1 h-auto ${
-              activeFilter === category ? "bg-primary" : "bg-transparent"
-            }`}
+            className={`rounded-full text-lg px-4 py-1 h-auto ${
+              activeFilter === category ? "bg-[#6B71FF] text-white" : "bg-transparent text-black" }`}
             onClick={() => {
               setActiveFilter(category)
               setCurrentPage(1) 
