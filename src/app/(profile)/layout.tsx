@@ -7,7 +7,7 @@ const LandingPageLayout = ({
     children: React.ReactNode;
 }) => {
     return (
-        <div className="h-full px=[100px]">
+        <div className="h-full">
             <div className="flex bg-[#FCFBFE]">
               <NavBarProfile />  
             </div>
