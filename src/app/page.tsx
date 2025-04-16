@@ -1,6 +1,6 @@
 import Community from "@/components/Community";
 import Groups from "@/components/Groups";
-import HomeFooter from "@/components/HomeFooter";
+import Footer from "@/components/Footer";
 import MainHome from "@/components/MainHome";
 import NavBar from "@/components/NavBar";
 import Resources from "@/components/Resources";
@@ -20,7 +20,7 @@ export default function Home() {
         <Community />
         <Groups />
       </div>
-      <HomeFooter />
+      <Footer />
     </div>
   );
 }

@@ -3,21 +3,21 @@ import CardList from './CardList'
 
 const Community = () => {
   return (
-    <div id="community" className='flex flex-col w-full h-full pl-6'>
+    <div id="community" className='flex flex-col w-full h-full px-4 md:pl-6'>
         <h2 className='text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-bold font-instrumental-sans text-black'>
             Nossa comunidade em números
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 mb-10 font-poppins">
-            <div className="bg-[#EDE8FB] rounded-lg p-8 flex flex-col items-center justify-center">
-                <h3 className="text-5xl font-bold text-[#424243] mb-2">20+</h3>
+            <div className="bg-[#EDE8FB] rounded-lg p-6 md:p-8 flex flex-col items-center justify-center">
+                <h3 className="text-4xl md:text-5xl font-bold text-[#424243] mb-2">20+</h3>
                 <p className="text-[#424243] text-lg lg:text-xl">Membros ativos</p>
             </div>
-            <div className="bg-[#EDE8FB] rounded-lg p-8 flex flex-col items-center justify-center">
-                <h3 className="text-5xl font-bold text-[#424243] mb-2">5</h3>
+            <div className="bg-[#EDE8FB] rounded-lg p-6 md:p-8 flex flex-col items-center justify-center">
+                <h3 className="text-4xl md:text-5xl font-bold text-[#424243] mb-2">5</h3>
                 <p className="text-[#424243] text-lg lg:text-xl">Projetos</p>
             </div>
-            <div className="bg-[#EDE8FB] rounded-lg p-8 flex flex-col items-center justify-center">
-                <h3 className="text-5xl font-bold text-[#424243] mb-2">3</h3>
+            <div className="bg-[#EDE8FB] rounded-lg p-6 md:p-8 flex flex-col items-center justify-center">
+                <h3 className="text-4xl md:text-5xl font-bold text-[#424243] mb-2">3</h3>
                 <p className="text-[#424243] text-lg lg:text-xl">Contribuições</p>
             </div>
         </div>
