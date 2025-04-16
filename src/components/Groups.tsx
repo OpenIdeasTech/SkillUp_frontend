@@ -41,7 +41,7 @@ const Groups = () => {
       ]
 
   return (
-    <div className="w-full py-16 overflow-hidden">
+    <div className="w-full px-4 py-16 overflow-hidden">
     <h2 className='text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-bold font-instrumental-sans text-black mb-20'>Grupos de interesse</h2>
     <Carousel className="w-full">
       <CarouselContent>
@@ -50,7 +50,7 @@ const Groups = () => {
             key={index}
             className="basis-full sm:basis-1/2 lg:basis-1/3"
           >
-            <Card className="bg-[#F8F8F8] border-none w-[300px] h-[300px] lg:h-full sm:w-[320px] md:3-[320px] lg:w-full">
+            <Card className="bg-[#F8F8F8] border-none w-[300px] h-[230px] lg:h-full sm:w-[320px] md:3-[320px] lg:w-full">
               <CardContent className="py-2 md:py-4 lg:py-6">
                 <div className="flex flex-col gap-4">
                     <div className='flex gap-2 items-center'>
