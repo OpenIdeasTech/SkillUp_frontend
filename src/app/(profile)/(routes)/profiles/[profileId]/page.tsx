@@ -4,7 +4,6 @@ import { Pencil } from 'lucide-react';
 import { Button } from '../../../../../components/ui/button';
 import CardGridPerson from './_components/CardGridPerson';
 import CardList from '@/components/CardList';
-import Footer from '@/components/Footer';
 
 
 
