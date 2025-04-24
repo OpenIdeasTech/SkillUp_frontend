@@ -34,15 +34,15 @@ const CardsCarousel = () => {
   ]
 
   return (
-    <div className="w-full py-16 overflow-hidden">
+    <div className="w-full py-8 px-4 overflow-hidden">
     <Carousel className="w-full">
       <CarouselContent>
         {resources.map((resource, index) => (
           <CarouselItem
             key={index}
-            className="basis-full sm:basis-1/2 lg:basis-1/3"
+            className="basis-full sm:basis-1/2 lg:basis-1/3 px-4"
           >
-            <Card className="bg-[#231458] border-none w-[300px] h-[300px] lg:h-full sm:w-[320px] md:3-[320px] lg:w-full">
+            <Card className="bg-[#231458] border-none w-full h-full">
               <CardContent className="py-2 md:py-4 lg:py-6">
                 <div className="flex flex-col gap-4">
                   <div className="bg-[#3b2180] w-12 h-12 rounded-md flex items-center justify-center">

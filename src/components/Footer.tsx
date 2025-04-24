@@ -1,6 +1,6 @@
 import { Instagram, Linkedin, Github} from 'lucide-react'
 import React from 'react'
-import logo from '../assets/logo-skill-up.png'
+import logo from '../assets/logo-skill-up-blue.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
