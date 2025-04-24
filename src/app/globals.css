@@ -133,3 +133,7 @@ li a:hover {
 li a {
   font-size: 1.25 rem;
 }
+
+label {
+  color: #1D3309;
+}
