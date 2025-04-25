@@ -48,9 +48,9 @@ const Groups = () => {
         {groups.map((group, index) => (
           <CarouselItem
             key={index}
-            className="basis-full sm:basis-1/2 lg:basis-1/3"
+            className="basis-full sm:basis-1/2 lg:basis-1/3 px-4"
           >
-            <Card className="bg-[#F8F8F8] border-none w-[300px] h-[230px] lg:h-full sm:w-[320px] md:3-[320px] lg:w-full">
+            <Card className="bg-[#F8F8F8] border-none w-full h-full">
               <CardContent className="py-2 md:py-4 lg:py-6">
                 <div className="flex flex-col gap-4">
                     <div className='flex gap-2 items-center'>
