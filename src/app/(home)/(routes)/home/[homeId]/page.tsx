@@ -15,7 +15,7 @@ export default function HomeAfterLogin() {
               <p className="text-3xl font-[Inter]">Crie um portfólio colaborativo, conecte-se com outras pessoas.</p>
             </div>
         </div>
-        <div>
+        <div className=" px-10 lg:px-0">
           <h2 className="font-bold text-4xl font-[Inter] mb-[30px]">Comunidade</h2>
           <CardList />
         </div>
