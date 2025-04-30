@@ -6,7 +6,7 @@ const MainHome = () => {
   return (
     <div className="flex flex-col justify-center w-full h-full text-white gap-[49px] text-left lg:gap-6">
       <h1
-        className="px-6 text-5xl sm:text-6xl md:text-6xl xl:text-7xl 2xl:text-8xl font-bold font-instrumental-sans leading-tight md:leading-none"
+        className="px-6 text-5xl sm:text-6xl md:text-6xl xl:text-7xl 2xl:text-7xl font-bold font-instrumental-sans leading-tight md:leading-none"
       >
         Destaque seu trabalho com <br className="hidden md:block" />
         um portfólio profissional

@@ -50,7 +50,7 @@ const Groups = () => {
             key={index}
             className="basis-full sm:basis-1/2 lg:basis-1/3 px-4"
           >
-            <Card className="bg-[#F8F8F8] border-none w-full h-full">
+            <Card className="bg-[#F8F8F8] border-1 w-full h-[95%]">
               <CardContent className="py-2 md:py-4 lg:py-6">
                 <div className="flex flex-col gap-4">
                     <div className='flex gap-2 items-center'>
