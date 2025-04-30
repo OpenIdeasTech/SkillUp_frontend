@@ -7,7 +7,7 @@ import { Button } from './ui/button';
 const NavBar = () => {
 
   const handleLogin = () => {
-    // Implement login logic here
+    window.location.href = '/login'; 
   };
 
   const handleCreateAccount = () => {
