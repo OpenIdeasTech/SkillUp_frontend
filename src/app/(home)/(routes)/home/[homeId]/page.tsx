@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export default function HomeAfterLogin() {
   return (
    <div>
-     <div className="flex flex-col px-28">
+     <div className="flex flex-col px:10 lg:px-28">
         <div className="flex flex-col w-full h-[320px] bg-[#FCFBFF] mb-20">
             <NavHome />
             <div className="flex flex-col h-full items-center justify-center text-center gap-4">
